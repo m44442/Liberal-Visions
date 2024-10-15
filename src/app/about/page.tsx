@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import Particles from "../components/particles";
@@ -36,7 +37,7 @@ const About = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black focus:outline-none"
-              aria-label="Toggle navigation"
+              title={isOpen ? "Close menu" : "Open menu"}
             >
               <svg
                 className="w-6 h-6"
